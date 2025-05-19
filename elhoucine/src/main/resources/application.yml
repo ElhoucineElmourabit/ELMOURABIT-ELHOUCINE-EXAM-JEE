@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/E-BANK?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDBDialect
+    show-sql: true
+server:
+  port: 8086
+
+jwt:
+  secret: nZYzB7xEGpL27C0Xh7z9zY8kJ+WhHYOAsqG5E5PjKx0E+VcV79vWz1SXLn+z+fUPL4WxeKM7tWZu1A6q6CeY+A==
