@@ -13,3 +13,6 @@ spring:
 server:
   port: 8086
 
+jwt:
+  secret: nZYzB7xEGpL27C0Xh7z9zY8kJ+WhHYOAsqG5E5PjKx0E+VcV79vWz1SXLn+z+fUPL4WxeKM7tWZu1A6q6CeY+A==
+
