@@ -1,5 +1,6 @@
 package bdcc.elmourabit.elhoucine.entities;
 
+import bdcc.elmourabit.elhoucine.entities.enums.RemboursementType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,8 @@ public class Remboursement {
 
     private Date date;
     private double montant;
+    @Enumerated(EnumType.STRING)
+    private RemboursementType remboursementType;
 
     @ManyToOne
     private Credit credit;

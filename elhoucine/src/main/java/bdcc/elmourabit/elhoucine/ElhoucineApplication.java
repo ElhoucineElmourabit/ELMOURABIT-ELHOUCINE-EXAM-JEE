@@ -5,6 +5,7 @@ import bdcc.elmourabit.elhoucine.entities.Immobilier;
 import bdcc.elmourabit.elhoucine.entities.Personnel;
 import bdcc.elmourabit.elhoucine.entities.Remboursement;
 import bdcc.elmourabit.elhoucine.entities.enums.ImmobilierType;
+import bdcc.elmourabit.elhoucine.entities.enums.RemboursementType;
 import bdcc.elmourabit.elhoucine.repositories.ClientRepository;
 import bdcc.elmourabit.elhoucine.repositories.CreditRepository;
 import bdcc.elmourabit.elhoucine.repositories.RemboursementRepository;
@@ -69,12 +70,14 @@ public class ElhoucineApplication {
 			r1.setMontant(2000);
 			r1.setCredit(immobilier);
 			r1.setDate(new Date());
+			r1.setRemboursementType(RemboursementType.MENSUALITE);
 			remboursementRepository.save(r1);
 
 			Remboursement r2 = new Remboursement();
 			r2.setMontant(500);
 			r2.setCredit(consommation);
 			r2.setDate(new Date());
+			r2.setRemboursementType(RemboursementType.REMBOURSEMENT_ANTICIPE);
 			remboursementRepository.save(r2);
 
 		}
