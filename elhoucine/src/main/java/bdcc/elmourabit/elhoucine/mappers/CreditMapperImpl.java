@@ -3,7 +3,9 @@ package bdcc.elmourabit.elhoucine.mappers;
 import bdcc.elmourabit.elhoucine.dtos.*;
 import bdcc.elmourabit.elhoucine.entities.*;
 import org.springframework.beans.BeanUtils;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CreditMapperImpl {
     public ClientDTO fromClient(Client client){
         ClientDTO clientDTO = new ClientDTO();
