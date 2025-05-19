@@ -51,6 +51,8 @@ public class ElhoucineApplication {
 			immobilier.setMontant(500000);
 			immobilier.setTypeBien(ImmobilierType.MAISON);
 			immobilier.setClient(client);
+			immobilier.setDateAcc(new Date());
+			immobilier.setDateDem(new Date());
 			creditRepository.save(immobilier);
 
 
@@ -58,6 +60,8 @@ public class ElhoucineApplication {
 			consommation.setMontant(10000);
 			consommation.setMotif("blabla");
 			consommation.setClient(client);
+			consommation.setDateAcc(new Date());
+			consommation.setDateDem(new Date());
 			creditRepository.save(consommation);
 
 
