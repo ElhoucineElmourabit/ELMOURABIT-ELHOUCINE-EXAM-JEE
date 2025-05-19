@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/clients")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class ClientRestController {
     private final ClientServiceImpl clientService;
 

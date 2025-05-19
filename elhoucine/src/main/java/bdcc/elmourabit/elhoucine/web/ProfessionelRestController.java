@@ -12,6 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/professionnel")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class ProfessionelRestController {
     private final CreditService creditService;
 

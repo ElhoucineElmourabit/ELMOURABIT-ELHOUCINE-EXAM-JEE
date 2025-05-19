@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/personnel")
+@CrossOrigin("*")
 public class PersonnelRestController {
     private CreditService creditService;
 

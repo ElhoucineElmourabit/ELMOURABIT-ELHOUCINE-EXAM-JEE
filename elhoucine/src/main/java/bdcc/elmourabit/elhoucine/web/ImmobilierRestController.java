@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/immobilier")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class ImmobilierRestController {
 
     private CreditService creditService;
